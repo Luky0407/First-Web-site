@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenTech Web Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/script.js">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MakeYourBussinessGrow</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 style="background-color: #00000052;">We Build Stunning Company Profiles & Portfolios</h1>
+            <p>Boost your brand with professional, modern, and responsive websites by GenTech.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>GenTech is a creative digital studio specializing in company profile and portfolio website development. We combine clean design, powerful functionality, and modern technologies to help your business stand out online.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Company Profile Website</h3>
+                <p>We create elegant, responsive company profile websites that highlight your brand’s identity and values.</p>
+            </div>
+            <div class="service-card">
+                <h3>Portfolio Website</h3>
+                <p>Showcase your projects, skills, and creativity through a clean and modern portfolio website.</p>
+            </div>
+            <!-- <div class="service-card">
+                <h3>Website Redesign</h3>
+                <p>Give your old website a fresh look with improved design, faster performance, and SEO optimization.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Our Works</h2>
+        <div class="portfolio-grid">
+            <a href="other page/companyprofile.html" target="_blank">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcGFueSUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500" alt="Project 1" title="click">
+                    <p style="color: #fff;padding: 10px; font-weight: 700; letter-spacing: 3pxs;
+                    font-size: 2em;">COMPANY PROFILE PACKAGES</p>
+                </div>
+            </a>
+            <a href="other page/portfolio.html" target="_blank">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Project 1" title="click" style="height: 24.3rem;">
+                    <p style="color: #fff;padding: 10px; font-weight: 700; letter-spacing: 3pxs;  font-size: 2em;">PORTFOLIO PACKAGES</p>
+                </div>
+            </a>
+
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 GenTech Web Studio | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js">
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        });
+
+    </script>
+</body>
+</html>

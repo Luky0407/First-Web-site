@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Profile Packages | GenTech</title>
+  <link rel="stylesheet" href="css/cp.css">
+  <link rel="stylesheet" href="js/cp.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #0f0f0f, #121212);
+  background-image: url("https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.header p {
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* Package Sections */
+.packages {
+  padding: 60px 10%;
+}
+
+.package {
+  margin-bottom: 60px;
+  animation: fadeInUp 1s ease;
+}
+
+.package h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff5757;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+    .card-container a p {
+      text-align: center;
+      padding: 10px;
+      font-family: "Orbitron", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 3px;
+    }
+
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  background: #1c1c1c;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: filter 0.3s;
+}
+
+.card span {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 87, 87, 0.4)
+}
+
+.card:hover img {
+  filter: brightness(1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0f0f0f;
+  padding: 25px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .packages {
+    padding: 40px 6%;
+  }
+
+  .card span {
+    font-size: 0.9rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Company Profile Packages</h1>
+    <p>Choose the perfect website package for your business — from simple to advanced.</p>
+  </header>
+
+  <!-- Packages Container -->
+  <section class="packages">
+    <!-- BASIC PACKAGE -->
+    <div class="package">
+      <h2>Basic Package</h2>
+      <h3 style="text-align: center; padding-bottom: 12px;"><del>Rp.450.000</del>/Rp.350.000 | $55</h3>
+      <h4 style="text-align: center; padding-bottom: 12px;">Only $55 to make your bussiness looks professional, and the best part is? It last forever in internet</h4>
+      <div class="card-container">
+        <a href="../other page/basic package/Luckyana Mawaddah/index.html" target="_blank" class="card">
+          <img src="/img/basic1.png" alt="Basic 1" />
+          <span>Simple Profile Design</span>
+          <p>Alpha</p>
+        </a>
+        <a href="https://example2.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 2" />
+          <span>Minimalist Layout</span>
+          <p>NeoSite</p>
+        </a>
+        <a href="https://example3.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 3" />
+          <span>One-Page Website</span>
+          <p>Prime One</p>
+        </a>
+        <a href="https://example1.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 1" />
+          <span>Simple Profile Design</span>
+          <p>Vertex</p>
+        </a>
+        <a href="https://example2.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 2" />
+          <span>Minimalist Layout</span>
+          <p>Orbit</p>
+        </a>
+        <a href="https://example3.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 3" />
+          <span>One-Page Website</span>
+          <p>Axis</p>
+        </a>
+        <a href="https://example1.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 1" />
+          <span>Simple Profile Design</span>
+          <p>NovaBase</p>
+        </a>
+        <a href="https://example2.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 2" />
+          <span>Minimalist Layout</span>
+          <p>Zenith</p>
+        </a>
+        <a href="https://example3.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 3" />
+          <span>One-Page Website</span>
+          <p>Lumo</p>
+        </a>
+        <a href="https://example4.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 4" />
+          <span>Static Landing Page</span>
+          <p>CoreX</p>
+        </a>
+        <a href="https://example5.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 5" />
+          <span>Personal Profile</span>
+          <p>Initio</p>
+        </a>
+        <a href="https://example5.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Basic 5" />
+          <span>Personal Profile</span>
+          <p>Elevate</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- PRO PACKAGE -->
+    <div class="package">
+      <h2>Pro Package</h2>
+      <div class="card-container">
+        <a href="https://example6.com" target="_blank" class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1685086785423-435c02d5c321?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Pro 1" />
+          <span>Dynamic Company Website</span>
+        </a>
+        <a href="https://example6.com" target="_blank" class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1685086785423-435c02d5c321?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Pro 1" />
+          <span>Dynamic Company Website</span>
+        </a>
+        <a href="https://example6.com" target="_blank" class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1685086785423-435c02d5c321?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Pro 1" />
+          <span>Dynamic Company Website</span>
+        </a>
+        <a href="https://example6.com" target="_blank" class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1685086785423-435c02d5c321?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Pro 1" />
+          <span>Dynamic Company Website</span>
+        </a>
+        <a href="https://example7.com" target="_blank" class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1685086785423-435c02d5c321?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Pro 2" />
+          <span>Multi-Page Design</span>
+        </a>
+        <a href="https://example8.com" target="_blank" class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1685086785423-435c02d5c321?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Pro 3" />
+          <span>Portfolio Integration</span>
+        </a>
+        <a href="https://example9.com" target="_blank" class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1685086785423-435c02d5c321?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Pro 4" />
+          <span>SEO Optimized Website</span>
+        </a>
+        <a href="https://example10.com" target="_blank" class="card">
+          <img src="https://plus.unsplash.com/premium_photo-1685086785423-435c02d5c321?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFzaWMlMjB3ZWIlMjBwYWNrYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500" alt="Pro 5" />
+          <span>Custom Color Theme</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- ADVANCED PACKAGE -->
+    <div class="package">
+      <h2>Advanced Package</h2>
+      <div class="card-container">
+        <a href="advanced package/web orang.html" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1728652964273-09085b4b22da?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhc2ljJTIwd2ViJTIwcGFja2FnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="Advanced 1" />
+          <span>Premium Animation Design</span>
+        </a>
+        <a href="https://example12.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1728652964273-09085b4b22da?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhc2ljJTIwd2ViJTIwcGFja2FnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="Advanced 2" />
+          <span>Custom CMS Integration</span>
+        </a>
+        <a href="https://example12.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1728652964273-09085b4b22da?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhc2ljJTIwd2ViJTIwcGFja2FnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="Advanced 2" />
+          <span>Custom CMS Integration</span>
+        </a>
+        <a href="https://example12.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1728652964273-09085b4b22da?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhc2ljJTIwd2ViJTIwcGFja2FnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="Advanced 2" />
+          <span>Custom CMS Integration</span>
+        </a>
+        <a href="https://example12.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1728652964273-09085b4b22da?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhc2ljJTIwd2ViJTIwcGFja2FnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="Advanced 2" />
+          <span>Custom CMS Integration</span>
+        </a>
+        <a href="https://example13.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1728652964273-09085b4b22da?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhc2ljJTIwd2ViJTIwcGFja2FnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="Advanced 3" />
+          <span>E-commerce Ready</span>
+        </a>
+        <a href="https://example14.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1728652964273-09085b4b22da?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhc2ljJTIwd2ViJTIwcGFja2FnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="Advanced 4" />
+          <span>Full Branding Support</span>
+        </a>
+        <a href="https://example15.com" target="_blank" class="card">
+          <img src="https://images.unsplash.com/photo-1728652964273-09085b4b22da?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhc2ljJTIwd2ViJTIwcGFja2FnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500" alt="Advanced 5" />
+          <span>Custom Backend</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 GenTech Web Studio — All Rights Reserved</p>
+  </footer>
+
+  <script src="js/cp.js">
+    // Optional JS: Simple animation when scrolling
+const elements = document.querySelectorAll('.package');
+
+const revealOnScroll = () => {
+  const trigger = window.innerHeight * 0.85;
+  elements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < trigger) {
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    }
+  });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+
+  </script>
+</body>
+</html>
